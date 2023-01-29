@@ -23,33 +23,6 @@ class MainActivity : AppCompatActivity() {
             val intent=Intent(this,CategorySelectActivity::class.java)
             startActivity(intent)
         }
-        getData()
-    }
-    private fun getData(){
-        val textView:TextView=findViewById(R.id.textMessage)
-        val retrofitBuilder=Retrofit.Builder().addConverterFactory(GsonConverterFactory.create()).baseUrl(BASE_URL).build().create(ApiInterface::class.java)
-        val retrofitData=retrofitBuilder.getData(10,null)
-        retrofitData.enqueue(object : Callback<List<Question>?> {
-            override fun onResponse(
-                call: Call<List<Question>?>,
-                response: Response<List<Question>?>
-            ) {
-                val responseBody=response.body()!!
-                val myStringBuilder=StringBuilder()
-                var i=1;
-                for(myData in responseBody)
-                {
-                    myStringBuilder.append("Question "+i+" "+myData.question)
-                    myStringBuilder.append("\n")
-                    i += 1
-                }
-//                textView.text=myStringBuilder
-            }
-
-            override fun onFailure(call: Call<List<Question>?>, t: Throwable) {
-                Log.d("MainActivity","Message :"+t.message)
-            }
-        })
     }
 
 }

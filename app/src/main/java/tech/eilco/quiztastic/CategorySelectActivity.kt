@@ -25,6 +25,7 @@ class CategorySelectActivity : AppCompatActivity(), View.OnClickListener {
         binding.btn7.setOnClickListener(this)
         binding.btn8.setOnClickListener(this)
         binding.btn2.setOnClickListener(this)
+        binding.btn9.setOnClickListener(this)
 
     }
     override fun onClick(v: View?) {
