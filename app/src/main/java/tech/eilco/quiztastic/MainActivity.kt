@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val button_next:Button=findViewById(R.id.btn_nextActivity)
         button_next.setOnClickListener{
-            val intent=Intent(this,CategorySelect::class.java)
+            val intent=Intent(this,CategorySelectActivity::class.java)
             startActivity(intent)
         }
         getData()
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private fun getData(){
         val textView:TextView=findViewById(R.id.textMessage)
         val retrofitBuilder=Retrofit.Builder().addConverterFactory(GsonConverterFactory.create()).baseUrl(BASE_URL).build().create(ApiInterface::class.java)
-        val retrofitData=retrofitBuilder.getData(10)
+        val retrofitData=retrofitBuilder.getData(10,null)
         retrofitData.enqueue(object : Callback<List<Question>?> {
             override fun onResponse(
                 call: Call<List<Question>?>,

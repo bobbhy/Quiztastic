@@ -10,5 +10,6 @@ data class Question(
     val question: String,
     val regions: List<Any>,
     val tags: List<String>,
-    val type: String
+    val type: String,
+    var answers:MutableList<String>?
 )

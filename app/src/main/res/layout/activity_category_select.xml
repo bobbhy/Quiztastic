@@ -1,9 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CategorySelect">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="10dp"
+                android:text="General knowledge"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1" />
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="10dp"
+                android:text="Arts &amp; Literature"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1" />
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:text="Film &amp; TV"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1" />
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:text="Geography"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1" />
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:text="History"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1" />
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:text="Music"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textFontWeight="300" />
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:text="Science"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textFontWeight="300" />
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:text="Society &amp; Culture"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textFontWeight="300" />
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:text="Sport &amp; Leisure"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textFontWeight="300" />
+        </LinearLayout>
+    </ScrollView>

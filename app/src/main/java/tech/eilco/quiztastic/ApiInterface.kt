@@ -7,5 +7,5 @@ import retrofit2.http.Query
 interface ApiInterface {
 
     @GET("questions")
-    fun getData(@Query("limit") limit:Int):Call<List<Question>>
+    fun getData(@Query("limit") limit:Int,@Query("categories") category: String?):Call<List<Question>>
 }
