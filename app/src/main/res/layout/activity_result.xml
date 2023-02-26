@@ -10,14 +10,11 @@
     android:paddingHorizontal="30dp"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Score"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:src="@drawable/logo"
+        android:contentDescription="Zhou"
         />
 
     <ImageView
@@ -51,11 +48,12 @@
 
     <Button
         android:id="@+id/btnRestart"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="try again"
         android:textAllCaps="true"
-        android:backgroundTint="@color/green_200"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green_300"
         android:textSize="18sp"
         />
 

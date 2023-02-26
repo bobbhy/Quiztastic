@@ -71,19 +71,9 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                             setQuestion()
                         }
                         else -> {
-                            Toast.makeText(
-                                this,
-                                "You have successfully completed the Quiz your score is $score / 10",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                            /*
-                            val intent = Intent(this,MainActivity::class.java)
-                            startActivity(intent)
-                             */
                             val intent = Intent(this@QuizQuestionsActivity, Score::class.java)
                             intent.putExtra("score", score)
                             startActivity(intent)
-//                            finish()
                         }
                     }
                 } else {
